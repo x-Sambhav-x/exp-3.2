@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .library-container {
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 25px;
+      background-color: white;
+      max-width: 600px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .search-box,
+    .add-box input {
+      width: calc(50% - 10px);
+      padding: 8px;
+      margin: 5px 5px 10px 0;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .search-box {
+      width: 98%;
+    }
+
+    .add-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .add-box button {
+      padding: 8px 12px;
+      background-color: #eee;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .book-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 8px;
+      background-color: #fafafa;
+    }
+
+    .book-item b {
+      font-weight: bold;
+    }
+
+    .remove-btn {
+      padding: 6px 12px;
+      background-color: #eee;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .remove-btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="library-container">
+    <h2>Library Management</h2>
+    <input type="text" class="search-box" placeholder="Search by title or author">
+    <div class="add-box">
+      <input type="text" placeholder="New book title">
+      <input type="text" placeholder="New book author">
+      <button>Add Book</button>
+    </div>
+
+    <div class="book-item">
+      <span><b>1984</b> by George Orwell</span>
+      <button class="remove-btn">Remove</button>
+    </div>
+    <div class="book-item">
+      <span><b>The Great Gatsby</b> by F. Scott Fitzgerald</span>
+      <button class="remove-btn">Remove</button>
+    </div>
+    <div class="book-item">
+      <span><b>To Kill a Mockingbird</b> by Harper Lee</span>
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="library-container">
+    <h2>Library Management</h2>
+    <input type="text" class="search-box" value="great">
+    <div class="add-box">
+      <input type="text" placeholder="New book title">
+      <input type="text" placeholder="New book author">
+      <button>Add Book</button>
+    </div>
+
+    <div class="book-item">
+      <span><b>The Great Gatsby</b> by F. Scott Fitzgerald</span>
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+</body>
+</html>
